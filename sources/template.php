@@ -11,6 +11,11 @@
     $banner_top = $d->fetch_array();
 	
 	$d->reset();
+    $sql= "select * from #_photo where type='logo_right'";
+    $d->query($sql);
+    $logo_right = $d->fetch_array();
+	
+	$d->reset();
     $sql= "select * from #_photo where type='bg_taisao'";
     $d->query($sql);
     $bg_taisao = $d->fetch_array();

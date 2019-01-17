@@ -51,17 +51,11 @@
     </ul>
 </li>
 <?php */ ?>
-<?php /* ?>
-<li class="categories_li" id="menu7"><a href="#" title="" class="exp"><span>Chi nhánh</span><strong></strong></a>
+<li class="categories_li" id="menu7"><a href="#" title="" class="exp"><span>Chi nhánh bản đồ</span><strong></strong></a>
   <ul class="sub">
-    <li><a href="index.php?com=chinhanh&act=man_list&type=chinhanh">Tỉnh thành</a></li>
-    <li><a href="index.php?com=chinhanh&act=man_cat&type=chinhanh">Quận huyện</a></li>
-    <li><a href="index.php?com=chinhanh&act=man_item&type=chinhanh">Phường xã</a></li>
-    <li><a href="index.php?com=chinhanh&act=man_sub&type=chinhanh">Đường phố</a></li>
     <li><a href="index.php?com=chinhanh&act=man&type=chinhanh">Quản lý chi nhánh </a></li>
   </ul>
 </li> 
-<?php */ ?>
 <?php /* ?>
 <li class="categories_li" id="menu7"><a href="#" title="" class="exp"><span>Hỏi đáp</span><strong></strong></a>
    <ul class="sub">

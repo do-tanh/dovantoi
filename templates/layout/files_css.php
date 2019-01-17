@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 <!--my style-->
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style_media.css">
 <!--owl-->
 <link href="css/owl/owl.carousel.css" type="text/css" rel="stylesheet">
 <link href="css/owl/owl.transitions.css" type="text/css" rel="stylesheet">

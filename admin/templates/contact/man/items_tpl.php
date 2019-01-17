@@ -70,9 +70,8 @@
       <tr>
         <td></td>
         <td class="tb_data_small"><a href="#" class="tipS" style="margin: 5px;">Thứ tự</a></td>           
-        <td class="sortCol"><div>Tiêu đề <span></span></div></td>
         <td class="sortCol"><div>Tên <span></span></div></td>
-        <td class="sortCol"><div>Email <span></span></div></td>
+        <td class="sortCol"><div>Điện thoại <span></span></div></td>
         <td class="tb_data_small">Ngày tạo</td>
         <td width="200">Thao tác</td>
       </tr>
@@ -91,10 +90,8 @@
 
             <div id="ajaxloader"><img class="numloader" id="ajaxloader<?=$items[$i]['id']?>" src="images/loader.gif" alt="loader" /></div>
         </td> 
-
-        <td align="center" <?php if($items[$i]['view']==0){ echo "style='font-weight:bold;'";}?>><?=$items[$i]['tieude']?></td>
         <td align="center" <?php if($items[$i]['view']==0){ echo "style='font-weight:bold;'";}?>><?=$items[$i]['ten']?></td>
-        <td align="center" <?php if($items[$i]['view']==0){ echo "style='font-weight:bold;'";}?>><?=$items[$i]['email']?></td>
+        <td align="center" <?php if($items[$i]['view']==0){ echo "style='font-weight:bold;'";}?>><?=$items[$i]['dienthoai']?></td>
 
 
         <td align="center"><?=date('d/m/Y - g:i A',$items[$i]['ngaytao']);?></td>

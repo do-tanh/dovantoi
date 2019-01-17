@@ -191,6 +191,13 @@
 			</div>
 			<div class="clear"></div>
 		</div>	
+		<div class="formRow">
+			<label>iframe:</label>
+			<div class="formRight">
+				<textarea rows="8" cols="" title="Code iframe" class="tipS" name="data[iframe]"><?=@$item['iframe']?></textarea>
+			</div>
+			<div class="clear"></div>
+		</div>	
 
 		<div class="formRow">
 			<label>FanPage Facebook</label>

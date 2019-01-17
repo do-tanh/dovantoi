@@ -116,7 +116,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
 			include_once _template."layout/header.php"; 
 			include_once _template."layout/menu.php"; 
 			include_once _template."layout/slider.php"; 
-			include_once _template."layout/gioithieu.php"; 
+			if($source =='index') include_once _template."layout/gioithieu.php"; 
 		?>
     	<div id="container" <?php if($source !='index') echo 'class="inner"'?>>
     		<div id="main">

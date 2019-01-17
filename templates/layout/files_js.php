@@ -24,7 +24,8 @@ var data_id=$(this).attr('data-id');
     var data_id=$(this).data('id');
   owl_index.owlCarousel({
     singleItem:true,
-    slideSpeed: 500,
+    autoPlay: 3000,
+    pagination:false,
     pagination:false,
     navigation:false
   });
@@ -49,6 +50,7 @@ var data_id=$(this).attr('data-id');
       itemsTablet: [600,4], //2 items between 600 and 0
       itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
     slideSpeed: 500,
+	 autoPlay: 3000,
     pagination:false,
     navigation:false
   });
@@ -383,6 +385,7 @@ api_mmenu.bind('closed', function () {
       itemsTablet: [600,4], //2 items between 600 and 0
       itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 	  slideSpeed: 500,
+	   autoPlay: 3000,
 	  pagination:false,
 	  navigation:false,
   });
@@ -393,6 +396,28 @@ api_mmenu.bind('closed', function () {
 
   $(".prev_taisao").click(function(){
     owl_taisao.trigger('owl.prev');
+  })
+</script>
+<script type="text/javascript">
+  var owl_album = $(".owl_album");
+  owl_album.owlCarousel({
+      items : 1, //10 items above 1000px browser width
+      itemsDesktop : [1000,1], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,1], // betweem 900px and 601px
+      itemsTablet: [600,1], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+	  autoPlay: 3000,
+	  slideSpeed: 500,
+	  pagination:false,
+	  navigation:false,
+  });
+
+  $(".next_album").click(function(){
+    owl_album.trigger('owl.next');
+  })
+
+  $(".prev_album").click(function(){
+    owl_album.trigger('owl.prev');
   })
 </script>
 <?php  if($show_doitac){ //đối tác?>
@@ -427,6 +452,7 @@ api_mmenu.bind('closed', function () {
       itemsTablet: [600,3], //2 items between 600 and 0
       itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 	  slideSpeed: 500,
+	   autoPlay: 3000,
 	  pagination:false,
 	  navigation:false,
   });
@@ -453,6 +479,7 @@ api_mmenu.bind('closed', function () {
       itemsTablet: [600,4], //2 items between 600 and 0
       itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 	  slideSpeed: 500,
+	   autoPlay: 3000,
 	  pagination:false,
 	  navigation:false,
   });
@@ -731,7 +758,7 @@ $.confirm({
   });
 </script>
 <?php } ?>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCCvwoYK9A3MEA08XHZiKvJlvpJ5NnMyO4"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key="></script>
 <script type="text/javascript">
 		   var map;
 		   var infowindow;

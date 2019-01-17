@@ -23,7 +23,7 @@
 </li><!--end li san pham-->
 <li <?=$_GET['com']=='chi-nhanh'?'class="menu_active"':''?>><a href="chi-nhanh.html">Chi nhánh</a></li><!--end li tin tuc-->
 <li <?=$_GET['com']=='doi-tac'?'class="menu_active"':''?>><a href="doi-tac.html">Đối tác</a></li><!--end li tin tuc-->
-<li <?=$_GET['com']=='thu-vien'?'class="menu_active"':''?>><a href="thu-vien-anh.html"><?=_hinhanh?></a></li>
+<li <?=$_GET['com']=='hinh-anh'?'class="menu_active"':''?>><a href="hinh-anh.html"><?=_hinhanh?></a></li>
 <li <?=$_GET['com']=='tin-tuc'?'class="menu_active"':''?>><a href="tin-tuc.html">Tin tức</a></li>
 <li <?=$_GET['com']=='video'?'class="menu_active"':''?>><a href="video.html">Video</a></li>
 <!--<li <?=$_GET['com']=='lien-he'?'class="menu_active"':''?>><a href="lien-he.html"><?=_lienhe?></a></li>-->

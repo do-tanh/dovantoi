@@ -3,7 +3,7 @@
   <div class="title_index"><span>Menu của quán</span></div>
   <div class="content_main">
     <div class="row_p">
-	<div class="owl_index owl-carousel" data-id="<?=$catnb[$j]['id']?>">
+	<div class="owl_index owl-carousel">
       <?=get_product_items($product_index,'w100')?>
     </div><!--end row san pham-->
     </div><!--end row san pham-->

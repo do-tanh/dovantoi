@@ -18,7 +18,7 @@
                 </h3>
             </div><!--end box news name-->
             <div class="box_news_date"><i class="fa fa-calendar"></i> <?=date('d-m-Y')?> - <i class="fa fa-eye"></i> <?=$value['luotxem']?></div>
-            <div class="box_news_mota"><?=_substr(stripcslashes($value['mota_'.$lang]),380)?></div>
+            <div class="box_news_mota"><?=_substr(stripcslashes($value['mota_'.$lang]),150)?></div>
             <?php /* ?><div class="box_news_readmore">
                 <a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_'.$lang]?>">
                     Xem chi tiết
@@ -31,6 +31,7 @@
         </div><!-- .box-news -->
         
     <?php } ?>
+	 <div class="clear"></div>
    <div class="paging"><?=$paging?></div>
     <?php }else{?><div class="text" style="text-align:center"><b style="color:#F00; font-size: 17px;">Nội dung chưa cập nhật. Xin vui lòng xem chuyên mục khác.</b></div><?php }?>
      </div><!--content main-->

@@ -32,7 +32,7 @@
                 <li class="ddnew"><a title=""><img src="images/icons/topnav/messages.png" alt="" /><span>Thông báo</span><span class="numberTop"><?=$tong_count?></span></a>
                     <ul class="userMessage">
                         <li><a href="index.php?com=contact&act=man&type=lienhe" title="" class="sInbox"><span>Liên hệ</span> <span class="numberTop" style="float:none; display:inline-block"><?=$row_lienhe['num']?></span></a></li>
-                        <!-- <li><a href="index.php?com=contact&act=man&type=dangky" title="" class="sInbox"><span>Đăng ký</span> <span class="numberTop" style="float:none; display:inline-block"><?=$row_dangky['num']?></span></a></li> -->
+                        <li><a href="index.php?com=contact&act=man&type=dangky" title="" class="sInbox"><span>Đăng ký</span> <span class="numberTop" style="float:none; display:inline-block"><?=$row_dangky['num']?></span></a></li> 
 
                        <!--  <li><a href="index.php?com=order&act=man" title="" class="sInbox"><span>Đơn hàng</span> <span class="numberTop" style="float:none; display:inline-block"><?=$row_giohang['num']?></span></a></li> -->
 

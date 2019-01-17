@@ -5,13 +5,13 @@
             <?php
               if(count($tintuc)>0){
               foreach ($tintuc as $key => $value) { 
-                $arr_links=explode('watch?v=',$value['links']);
+                $id_y=id_youtube($value['links']);
               ?>
               <div class="col_sanpham col-md-3 col-sm-4 col-xs-6">
                  <div class="box_sanpham ">
                       <div class="img_sanpham">
                           <a href="video/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>">
-                            <img src="timthumb.php?src=http://img.youtube.com/vi/<?=$arr_links[1]?>/0.jpg&w=300&h=230&zc=2&q=100" class="w100"  />
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/<?=$id_y?>" frameborder="0" allowfullscreen></iframe>
                           </a>
                       </div><!--end img sanpham-->
                       <div class="name_sanpham">

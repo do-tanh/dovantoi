@@ -5,7 +5,7 @@
       <div class="img_detail">
         <div class="main_img_detail">
           <a id="Zoomer" href="<?=_upload_product_l.$row_detail['photo']?>" class="MagicZoomPlus" rel="zoom-width:300px; zoom-height:300px;selectors-effect-speed: 600; selectors-class: Active;">
-            <img src="<?=thumb($row_detail['photo'],_upload_product_l,$row_detail['tenkhongdau'],400,250,1)?>" alt="<?=$row_detail['ten_'.$lang]?>"/>
+            <img src="<?=thumb($row_detail['photo'],_upload_product_l,$row_detail['tenkhongdau'],500,420,1)?>" alt="<?=$row_detail['ten_'.$lang]?>"/>
           </a>
         </div><!--main img detail-->
         <?php include_once "layout/module/sub_img_detail_h.php"; ?>
@@ -17,12 +17,6 @@
         <div class="item_info_detail gia_detail"><?=_giaban?> : <span><?=format_giaban($row_detail['giaban'],',',' VNĐ')?></span></div>
         <div class="item_info_detail"><?=_luotxem?> : <?=$row_detail['luotxem']?></div>
         <div class="item_info_detail"><?=_mota?> : <?=$row_detail['mota_'.$lang]?></div>
-        
-        <div class="item_info_detail">
-           <a href="javascript:" class="add_to_basket btn btn-danger" onclick="addtocart(<?=$row_detail['id']?>,1)">
-              <i class="fa fa-opencart"></i> <?=_dathang?>
-          </a>
-        </div>
         <div class="item_info_detail"><?=get_social('','share');?></div><!--end item share-->
       </div><!--info_detail-->
       <div class="clear"></div>
@@ -63,8 +57,9 @@
   <div class="title_main"><span><?=$title_other?></span></div>
   <div class="content_main">
       <div class="row_p">
-        <?=get_product_items($product)?>
+       <?=get_product_items_page($product)?>
       </div><!--end row san pham-->
-      <?=$paging?>
+	   <div class="clear"></div>
+      <div class="paging"><?=$paging?></div>
   </div><!--content main-->
 </div><!--end sub main-->

@@ -76,11 +76,17 @@
 			$type_bar = 'download';
 			$title_detail = "Download";
 			break;
-		case 'thu-vien-anh':
+		case 'hinh-anh':
 			$source = "album";
 			$template = isset($_GET['id']) ? "album_detail" : "album";
 			$type_bar = 'album';
-			$title_detail = "album";
+			$title_detail = "Hình ảnh";
+			break;
+		case 'khach-hang':
+			$source = "album";
+			$template = isset($_GET['id']) ? "album_detail" : "album";
+			$type_bar = 'khachhang';
+			$title_detail = "Khách hàng";
 			break;
 		case 'site-map':
 			$source = "sitemap";
@@ -117,11 +123,17 @@
 			$type_bar = 'chamsoc';
 			break;
 		
-		case 'gioi-thieu':
+		case 'chinh-sach':
 			$source = "news";
 			$template = isset($_GET['id']) ? "news_detail" : "news";
-			$type_bar = 'about';
-			$title_detail = 'Giới thiệu';
+			$type_bar = 'chinhsach';
+			$title_detail = 'Chính sách';
+			break;
+		case 'chi-nhanh':
+			$source = "news";
+			$template = isset($_GET['id']) ? "news_detail" : "news";
+			$type_bar = 'chinhanh';
+			$title_detail = 'Chi nhánh';
 			break;
 		
 		case 'tin-tuc':
@@ -130,6 +142,12 @@
 			$type_bar = 'tintuc';
 			$title_detail = _tintuc;
 			break;
+		case 'doi-tac':
+			$source = "news";
+			$template = isset($_GET['id']) ? "news_detail" : "news";
+			$type_bar = 'hethongdoitac';
+			$title_detail ='Hệ thống đối tác';
+			break;
 		
 		
 		case 'dich-vu':
@@ -137,6 +155,15 @@
 			$template = isset($_GET['id']) ? "news_detail" : "news";
 			$type_bar = 'dichvu';
 			$title_detail = _dichvu;
+		break;
+		
+		
+		
+		case 'tai-sao-chon-chung-toi':
+			$source = "news";
+			$template = isset($_GET['id']) ? "news_detail" : "news";
+			$type_bar = 'taisao';
+			$title_detail ='Tại sao chọn chúng tôi';
 		break;
 		
 		case 'san-pham':
@@ -156,6 +183,11 @@
 			$source = "contact";
 			$template = "contact";
 			$title_detail = _lienhe;	
+			break;
+		case 'dang-ky-doi-tac':
+			$source = "dangky";
+			$template = "dangky";
+			$title_detail ='Đăng ký đối tác';	
 			break;
 		
 		case 'tim-kiem':

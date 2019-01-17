@@ -5,13 +5,14 @@ function get_product_items($product,$class_add="",$com="san-pham"){
 	$lang=$_SESSION['lang'];
 	if($product){
 		foreach ($product as $key => $value) { ?>
-		 <div class="col_p col-md-4 col-sm-4 col-smx-4 col-xs-6 <?=$class_add?>" >
+		 <div class="col_p col-md-3 col-sm-4 col-smx-4 col-xs-6 <?=$class_add?>" >
                  <div class="box_p wow animated fadeIn " data-wow-delay="0.<?=$key%3?>s">
                       <div class="img_p zoom_img">
                           <a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>">
                              <img src="<?=thumb($value['photo'],_upload_product_l,$value['tenkhongdau'],276,222)?>" alt="<?=$value['ten_'.$lang]?>" class="w100 trs03"/>
                           </a>
-						  <div class="desc_p"><p><?=$value['mota_vi']?></p></div>
+						   <div class="desc_p"><a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>"><p><?=$value['mota_vi']?></p></a></div>
+						   
                       </div><!--end img sanpham-->
                       <div class="name_p">
                           <a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>">
@@ -31,7 +32,37 @@ function get_product_items($product,$class_add="",$com="san-pham"){
 		<?php }
 	}
 }
-
+function get_product_items_page($product,$class_add="",$com="san-pham"){
+	$string="";
+	$lang=$_SESSION['lang'];
+	if($product){
+		foreach ($product as $key => $value) { ?>
+		 <div class="col_p col-md-3 col-sm-4 col-smx-4 col-xs-6 <?=$class_add?>" >
+                 <div class="box_p wow animated fadeIn " data-wow-delay="0.<?=$key%3?>s">
+                      <div class="img_p zoom_img">
+                          <a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>">
+                             <img src="<?=thumb($value['photo'],_upload_product_l,$value['tenkhongdau'],276,222)?>" alt="<?=$value['ten_'.$lang]?>" class="w100 trs03"/>
+                          </a>
+						 <div class="desc_p"><a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>"><p><?=$value['mota_vi']?></p></a></div>
+                      </div><!--end img sanpham-->
+                      <div class="name_p name_page">
+                          <a href="<?=$com?>/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html" title="<?=$value['ten_vi']?>">
+                              <h2><?=$value['ten_'.$lang]?></h2>
+                          </a>
+                      </div><!--end ten sanpham-->
+                      <div class="gia_p gia_page">
+                          <?=_gia?> : <span><?=$value['giaban']==0?_lienhe:number_format($value['giaban'],0,',',',').' VNĐ'?></span>
+                      </div><!--end gia sanpham-->                  
+                      <div class="dathang_p dathang_page">
+                         <p> <a href="javascript:" class="add_to_basket btn_dathang" onclick="addtocart(<?=$value['id']?>,1)">
+                              <?=_dathang?>
+                          </a></p>
+                      </div><!--end dat hang san pham-->
+                  </div><!--end box san pham-->
+        </div><!--end col san pham-->
+		<?php }
+	}
+}
 
 function get_product_items_m($product,$class_add="",$com="san-pham"){
 	$string="";

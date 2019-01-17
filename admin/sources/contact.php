@@ -88,7 +88,7 @@ function get_items(){
 	}
 	$where .=" order by id desc";
 
-	$sql = "select ten,id,stt,hienthi,view,tieude,email,ngaytao from $where $limit";
+	$sql = "select ten,id,stt,hienthi,view,dienthoai,email,ngaytao from $where $limit";
 	$d->query($sql);
 	$items = $d->result_array();
 

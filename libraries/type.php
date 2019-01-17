@@ -208,7 +208,7 @@
 					$config_mota= "true";
 					$config_noidung= "false";
 					// $arr_hienthi=array('Nổi bật'=>'noibat');
-					$config_list = "true";
+					$config_list = "false";
 					$config_cat = "false";
 					$config_item = "false";
 					$config_sub = "false";
@@ -371,7 +371,11 @@
 			$title_main = 'Liên hệ';
 			$config_ten = 'true';
 			$config_images = 'true';
-			
+			break;
+		case 'dangky':
+			$title_main = 'Đăng ký';
+			$config_ten = 'true';
+			$config_images = 'true';
 			break;
 
 		case 'banner':

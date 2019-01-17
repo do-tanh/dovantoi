@@ -19,10 +19,12 @@
 			</div><!--end content bottom-->
 		</div><!--item bottom-->
 		<div class="item_bottom_hinhanh">
+		<div class="owl_album owl-carousel">
 			<div class="content_bottom">
 				<?php foreach($album_index as $key => $value) { ?>
-					<div class="img_album"><img src="<?=thumb($value['photo'],_upload_album_l,$value['tenkhongdau'],306,390)?>" alt="<?=$value['ten_'.$lang]?>" class="w100 trs03"/></div>
+					<div class="img_album zoom_img"><img src="<?=thumb($value['photo'],_upload_album_l,$value['tenkhongdau'],306,390)?>" alt="<?=$value['ten_'.$lang]?>" class="w100 trs03"/></div>
 				<?php } ?>
+			</div><!--end content bottom-->
 			</div><!--end content bottom-->
 		</div><!--item bottom-->
 	</div><!--end contain bottom-->
@@ -31,7 +33,7 @@
 	<div class="inner">
 		<div class="title_taisao"><h3>Sữa Chua Nếp Cẩm Lâm 90</h3></div>
 	<div class="row_p">
-	<div class="owl_taisao">
+	<div class="owl_taisao owl-carousel">
 		<?php foreach($taisao_index as $key => $value) { ?>
 			<div class="col_taisao col-md-12 col-sm-12 col-smx-12 col-xs-12">
 				<div class="box_taisao">
@@ -95,15 +97,15 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="owl_tintuc row_p">
+			<div class="owl_tintuc owl-carousel row_p">
 				<?php foreach($tintuc_index as $key => $value) { ?>
 					<div class="col_tintuc col-md-12 col-sm-12 col-smx-12 col-xs-1">
 						<div class="box_tintuc">	
-							<div class="img_tintuc">
+							<div class="img_tintuc zoom_img">
 								<img src="<?=thumb($value['photo'],_upload_baiviet_l,$value['tenkhongdau'],205,140)?>" alt="<?=$value['ten_'.$lang]?>" class="w100 trs03"/>
 							</div>
 							<div class="desc_tintuc">
-								<a href="tin-tuc/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html"><h3><?=$value['ten_vi']?></h3></a>
+								<a href="tin-tuc/<?=$value['tenkhongdau']?>-<?=$value['id']?>.html"><h3><?=_substr(stripcslashes($value['ten_'.$lang]),100)?></h3></a>
 							</div>
 						</div>
 					</div>

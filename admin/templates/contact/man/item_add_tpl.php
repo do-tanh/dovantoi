@@ -49,7 +49,7 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-
+		<?php if($_GET['type']=='lienhe') { ?>
 		<div class="formRow">
 			<label>Email : </label>
 			<div class="formRight">
@@ -64,6 +64,7 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+		<?php } ?>
 		<div class="formRow">
 			<label>Nội Dung : </label>
 			<div class="formRight">

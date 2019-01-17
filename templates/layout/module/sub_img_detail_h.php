@@ -5,7 +5,7 @@
 		<div class="owl_img_detail owl-carousel">
 
 			<div class="item_owl_sub">
-				<a href="<?=_upload_product_l.$row_detail['photo']?>" rel="zoom-id: Zoomer" rev="<?=thumb($row_detail['photo'],_upload_product_l,$row_detail['tenkhongdau'],400,250)?>">
+				<a href="<?=_upload_product_l.$row_detail['photo']?>" rel="zoom-id: Zoomer" rev="<?=thumb($row_detail['photo'],_upload_product_l,$row_detail['tenkhongdau'],500,420,1)?>">
 					<img src="<?=thumb($row_detail['photo'],_upload_product_l,$row_detail['tenkhongdau'],100,92)?>"  class="w100" />
 				</a>
 			</div>
@@ -13,7 +13,7 @@
 			if(count($product_photo)>0){
 				foreach ($product_photo as $key => $value) { ?>
 				<div class="item_owl_sub">
-					<a href="<?=_upload_product_l.$value['photo']?>" rel="zoom-id: Zoomer" rev="<?=thumb($value['photo'],_upload_product_l,$value['tenkhongdau'],400,250)?>">
+					<a href="<?=_upload_product_l.$value['photo']?>" rel="zoom-id: Zoomer" rev="<?=thumb($value['photo'],_upload_product_l,$value['tenkhongdau'],500,420,1)?>">
 						<img src="<?=thumb($value['photo'],_upload_product_l,$value['tenkhongdau'],100,92)?>"  class="w100" />
 					</a>
 				</div>

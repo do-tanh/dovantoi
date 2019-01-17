@@ -108,7 +108,7 @@
 			}
 			//exit($where);
 
-			$per_page = 4; // Set how many records do you want to display per page.
+			$per_page = 8; // Set how many records do you want to display per page.
 			$startpoint = ($page * $per_page) - $per_page;
 			$limit = ' limit '.$startpoint.','.$per_page;
 			$sql.=$where." order by stt,ngaytao desc $limit";
@@ -135,7 +135,7 @@
 
 		}else{
 			$sql="select * from";
-			$per_page = 4; // Set how many records do you want to display per page.
+			$per_page = 8; // Set how many records do you want to display per page.
 			$startpoint = ($page * $per_page) - $per_page;
 			$limit = ' limit '.$startpoint.','.$per_page;
 			$where = " #_baiviet where hienthi=1 and type='$type_bar'";
