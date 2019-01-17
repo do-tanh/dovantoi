@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('fonts/RobotoBold.eot');
+    src: url('fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('fonts/RobotoBold.woff2') format('woff2'),
+         url('fonts/RobotoBold.woff') format('woff'),
+         url('fonts/RobotoBold.ttf') format('truetype'),
+         url('fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('fonts/RobotoCondensedRegular.eot');
+    src: url('fonts/RobotoCondensedRegular.eot') format('embedded-opentype'),
+         url('fonts/RobotoCondensedRegular.woff2') format('woff2'),
+         url('fonts/RobotoCondensedRegular.woff') format('woff'),
+         url('fonts/RobotoCondensedRegular.ttf') format('truetype'),
+         url('fonts/RobotoCondensedRegular.svg#RobotoCondensedRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('fonts/RobotoRegular.eot');
+    src: url('fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('fonts/RobotoRegular.woff2') format('woff2'),
+         url('fonts/RobotoRegular.woff') format('woff'),
+         url('fonts/RobotoRegular.ttf') format('truetype'),
+         url('fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+@font-face {
+    font-family: 'SVNAvo';
+    src: url('fonts/SVNAvo.eot');
+    src: url('fonts/SVNAvo.eot') format('embedded-opentype'),
+         url('fonts/SVNAvo.woff2') format('woff2'),
+         url('fonts/SVNAvo.woff') format('woff'),
+         url('fonts/SVNAvo.ttf') format('truetype'),
+         url('fonts/SVNAvo.svg#SVNAvo') format('svg');
+}
+@font-face {
+    font-family: 'UTMBeautifulCaps';
+    src: url('fonts/UTMBeautifulCaps.eot');
+    src: url('fonts/UTMBeautifulCaps.eot') format('embedded-opentype'),
+         url('fonts/UTMBeautifulCaps.woff2') format('woff2'),
+         url('fonts/UTMBeautifulCaps.woff') format('woff'),
+         url('fonts/UTMBeautifulCaps.ttf') format('truetype'),
+         url('fonts/UTMBeautifulCaps.svg#UTMBeautifulCaps') format('svg');
+}
+@font-face {
+    font-family: 'SVNBeloved';
+    src: url('fonts/SVNBeloved.eot');
+    src: url('fonts/SVNBeloved.eot') format('embedded-opentype'),
+         url('fonts/SVNBeloved.woff2') format('woff2'),
+         url('fonts/SVNBeloved.woff') format('woff'),
+         url('fonts/SVNBeloved.ttf') format('truetype'),
+         url('fonts/SVNBeloved.svg#SVNBeloved') format('svg');
+}
+@font-face {
+    font-family: 'SVNAvobold';
+    src: url('fonts/SVNAvobold.eot');
+    src: url('fonts/SVNAvobold.eot') format('embedded-opentype'),
+         url('fonts/SVNAvobold.woff2') format('woff2'),
+         url('fonts/SVNAvobold.woff') format('woff'),
+         url('fonts/SVNAvobold.ttf') format('truetype'),
+         url('fonts/SVNAvobold.svg#SVNAvobold') format('svg');
+}
+
